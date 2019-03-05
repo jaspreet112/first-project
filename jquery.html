@@ -1,0 +1,58 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#hide").click(function(){
+    $("p").hide();
+  });
+  $("#show").click(function(){
+    $("p").show();
+  });
+});
+</script>
+<script> 
+$(document).ready(function(){
+  $("button").click(function(){
+    var div = $("div");  
+    div.animate({left: '100px'}, "slow");
+    div.animate({fontSize: '3em'}, "slow");
+  });
+});
+</script> 
+<style>
+body {background-color: powderblue;}
+ul  {color: blue;}
+p    {color: red;}
+</style>
+
+</head>
+<body>
+<div style="background:#98bf21;height:50px;width:120px;position:absolute;">INFO.</div>
+
+<h1>____________________</h1>
+<button id="ANIMATE">ANIMATE</button>
+<ul>
+  <li>NAME=JASPREET SINGH</li>
+  <li>ID=C0731754</li>
+  <li>COURSE=Emerging Technologies 03 (CPCM Group 3)</li>
+</ul> 
+
+<p>Hobbies</p>
+<p> Hobby is a particular and most interesting habit than other habit of any person.
+    Hobby is a good thing which must be with everyone.My hobby is traveling to new places.
+    Traveling involves huge fun.
+    In the younger age, traveling becomes a part of learning whereas in the older age it becomes a part of experience.</p>
+
+<button id="hide">Hide</button>
+<button id="show">Show</button>
+
+
+
+
+
+
+
+</body>
+</html>
+
